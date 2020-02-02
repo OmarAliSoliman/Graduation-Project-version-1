@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+ <!-- google icon -->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- materlized css -->
+ <link rel="stylesheet" href="./css/materialize.min.css">
+ <!-- slick css -->
+ <link rel="stylesheet" href="./css/slick.css">
+ <link rel="stylesheet" href="./css/slick-theme.css">
+ <!-- foontawesome -->
+ <link rel="stylesheet" href="./css/all.min.css">
+ <!-- style css -->
+ <link rel="stylesheet" href="./css/style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Hames</title>
+</head>
+<body>
+
+  
+<!-- start navbar -->
+
+  <!-- dropdow 1 (doctor) -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="./login.html">Login</a></li>
+    <li><a href="#!">Patient</a></li>
+    <li class="divider"></li>
+    <li><a href="./doctor-rigister.html">Rigister</a></li>
+  </ul>
+
+  <!-- dropdow 2 (patient) -->
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="./login.html">Login</a></li>
+    <li><a href="./search-doctor.html">Search Doctor</a></li>
+    <li class="divider"></li>
+    <li><a href="./rigister.html">Rigister</a></li>
+  </ul>
+
+  <ul id="dropdown3" class="dropdown-content">
+    <li><a href="./login.html">login</a></li>
+    <li><a href="#!">Patient</a></li>
+    <li><a href="./doctor-rigister.html">rigister</a></li>
+  </ul>
+
+  <ul id="dropdown4" class="dropdown-content">
+    <li><a href="./login.html">login</a></li>
+    <li><a href="./search-doctor.html">Search Docotr</a></li>
+    <li><a href="./doctor-rigister.html">Rigister</a></li>
+  </ul>
+
+  <!-- nav bar -->
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="./index.html" class="brand-logo"><img src="./images/logo.png" alt=""></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Doctor<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Patient<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown3">Doctor<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown4">Patient<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="./faq.html">FAQ</a></li>
+  </ul>
+
+  <!-- end navbar -->
+
+  <!-- start rigister page -->
+  <div class="rigister">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 rigister-pic hide-on-med-and-down">
+          <div class="pic"></div>
+        </div>
+        <div class="col l6 rigister-form center">
+          <div class="rigister-label">
+            <h6>patient Rigister<h6/>
+          </div>
+          <form action="">
+            <input type="email" name="rigister-email" id="rigister-email" placeholder="Email">
+            <input type="text" name="rigister-name" id="rigister-name" placeholder="user name">
+            <input type="password" name="rigister-password" id="rigister-password" placeholder="password">
+            <input type="password" name="rigister-confirm-password" id="rigister-confirm-password" placeholder="Confirm password">
+            <input type="number" name="rigister-id-number" id="rigister-id-number" placeholder="ID Number">
+            <input type="number" name="rigister-phone-number" id="rigister-phone-number" placeholder="Phone Number">
+            <input class="rigister-btn" type="submit" value="Rigister">
+          </form>
+          <div class="have-an-account left">
+            <a class="left" href="#">Are you Doctor ?</a><br>
+            <a class="left" href="#">Are you have an account ?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end rigister page -->
+
+  <!-- start footer -->
+  <div class="footer">
+    <div class="row">
+      <div class="col m12 l3">
+        <div class="footer-header"><img src="./images/footer-logo.png" alt=""></div>
+        <div class="footer-descreption">
+          <p class="descre">Lorem ipsum dolor sit amet consectetur , doloribus obcaecati quos pariatur quidem eum rerum vitae iste, ipsa deleniti architecto tempora maxime porro fugiat! Quia.</p>
+          <div class="footer-follow">
+            <ul class="follow-icon">
+              <li><a href="#"><i class=""><i class="fab fa-facebook-f"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-twitter"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-instagram"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-youtube"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-codepen"></i></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="footer-header">
+          Patient&Doctor
+        </div>
+        <ul class="footer-pient-doctor">
+          <li><a href="./search-doctor.html">Search</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./doctor-profile.html">Booking</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="footer-header">
+          For title
+        </div>
+        <ul class="footer-pient-doctor">
+          <li><a href="#">About</a></li>
+          <li><a href="#">faQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col m12 l3">
+        <div class="footer-header">
+          Contact Us
+        </div>
+        <ul class="footer-contact">
+          <li><i class="fas fa-location-arrow"></i><span>Egypt, Assuit (75711), Gomhirai street</span></li>
+          <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+          <li><i class="fas fa-envelope"></i><span>omarasmar9699@gmail.com</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="copy-right">
+          <h6>All copy &copy; right was reseved </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end footer -->
+
+  
+
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

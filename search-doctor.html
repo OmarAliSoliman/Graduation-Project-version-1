@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <!-- google icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- materlized css -->
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <!-- Datetimepicker CSS -->
+  <link rel="stylesheet" href=".//css/bootstrap-datetimepicker.min.css">
+  <!-- slick css -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <!-- foontawesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hames</title>
+</head>
+<body class="body-doctor-search">
+  
+  <!-- start navbar -->
+
+  <!-- dropdow 1 (doctor) -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="./login.html">Login</a></li>
+    <li><a href="#!">Patient</a></li>
+    <li class="divider"></li>
+    <li><a href="./doctor-rigister.html">Rigister</a></li>
+  </ul>
+
+  <!-- dropdow 2 (patient) -->
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="./login.html">Login</a></li>
+    <li><a href="./search-doctor.html">Search Doctor</a></li>
+    <li class="divider"></li>
+    <li><a href="./rigister.html">Rigister</a></li>
+  </ul>
+
+  <ul id="dropdown3" class="dropdown-content">
+    <li><a href="./login.html">login</a></li>
+    <li><a href="#!">Patient</a></li>
+    <li><a href="./doctor-rigister.html">rigister</a></li>
+  </ul>
+
+  <ul id="dropdown4" class="dropdown-content">
+    <li><a href="./login.html">login</a></li>
+    <li><a href="./search-doctor.html">Search Docotr</a></li>
+    <li><a href="./doctor-rigister.html">Rigister</a></li>
+  </ul>
+
+  <!-- nav bar -->
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="./index.html" class="brand-logo"><img src="./images/logo.png" alt=""></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Doctor<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Patient<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown3">Doctor<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown4">Patient<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="./faq.html">FAQ</a></li>
+  </ul>
+
+  <!-- end navbar -->
+
+  <!-- start search bar title -->
+
+  <div class="search-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="search-bar-title">
+            <h6>Search about any doctor with amazing filter and</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end search bar title -->
+
+  <!-- start search divs -->
+  <div class="search-doctor">
+    <div class="row">
+      <div class="col s12 l3 theiaStickySidebar">
+        <div class="filter">
+          <div class="filter-label"> <span>search filter</span></div>
+          <div class="filter-form">
+            <form action="">
+              <div class="cal-icon">
+                <input type="text" id="date-search" class="form-control datetimepicker" placeholder="Select Date">
+              </div>
+              <div class="cheack-gender">
+                <div class="cheack-gender-label">
+                  <span>Gender</span>
+                </div>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Male Doctor</span>
+                </label><br>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Female Doctor</span>
+                </label>
+              </div>
+
+              <div class="select-specialist">
+                <div class="select-specialist-label">
+                  <span>Select Specialist</span>
+                </div>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Denist</span>
+                </label><br>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Nerurology</span>
+                </label><br>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Urology</span>
+                </label><br>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Orthepetical</span>
+                </label><br>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Carediogal</span>
+                </label><br>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Caderoligist</span>
+                </label><br>
+              </div>
+              <input class="filter-search-btn" type="submit" value="Search">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l9">
+        <div class="result-search">
+          <div class="result-box">
+            <div class="result">
+              <div class="doctor-info">
+                <img src="./images/doctor/doctor-01.jpg" alt="doctor">
+                <span class="doctor-name">Dr. Ruby Perrin</span><br>
+                <span class="doctor-decreption">Periodontology and Oral Implantology, BDS</span><br>
+                <span class="doctor-field">denist</span><br>
+                <div class="p-rating">
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                </div>
+              </div>
+              <div class="doctor-parem">
+                <ul>
+                  <li><i class="fas fa-location-arrow"></i><span>Assuit, Gomhria-street</span></li>
+                  <li><i class="fas fa-comment"></i><span>12</span></li>
+                  <li><i class="fas fa-money-bill"></i><span>200/h</span></li>
+                  <li><i class="fas fa-location-arrow"></i><span>Florida, USA</span></li>
+                  <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+                </ul>
+              </div>
+              <button class="btn"><a href="./doctor-profile.html">View profile</a></button>
+              <button class="btn"><a style="color: #FFF;" href="./doctor-profile.html">Book Appoitment</a style="color: #FFF;"></button>
+            </div>
+            <!-- rebeet item -->
+            <div class="result">
+              <div class="doctor-info">
+                <img src="./images/doctor/doctor-02.jpg" alt="doctor">
+                <span class="doctor-name">Dr. Ruby Perrin</span><br>
+                <span class="doctor-decreption">Periodontology and Oral Implantology, BDS</span><br>
+                <span class="doctor-field">denist</span><br>
+                <div class="p-rating">
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                </div>
+              </div>
+              <div class="doctor-parem">
+                <ul>
+                  <li><i class="fas fa-location-arrow"></i><span>Assuit, Gomhria-street</span></li>
+                  <li><i class="fas fa-comment"></i><span>12</span></li>
+                  <li><i class="fas fa-money-bill"></i><span>200/h</span></li>
+                  <li><i class="fas fa-location-arrow"></i><span>Florida, USA</span></li>
+                  <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+                </ul>
+              </div>
+              <button class="btn"><a href="./doctor-profile.html">View profile</a></button>
+              <button class="btn"><a style="color: #FFF;" href="./doctor-profile.html">Book Appoitment</a></button>
+            </div>
+             <!-- rebeet item -->
+             <div class="result">
+              <div class="doctor-info">
+                <img src="./images/doctor/doctor-03.jpg" alt="doctor">
+                <span class="doctor-name">Dr. Ruby Perrin</span><br>
+                <span class="doctor-decreption">Periodontology and Oral Implantology, BDS</span><br>
+                <span class="doctor-field">denist</span><br>
+                <div class="p-rating">
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                </div>
+              </div>
+              <div class="doctor-parem">
+                <ul>
+                  <li><i class="fas fa-location-arrow"></i><span>Assuit, Gomhria-street</span></li>
+                  <li><i class="fas fa-comment"></i><span>12</span></li>
+                  <li><i class="fas fa-money-bill"></i><span>200/h</span></li>
+                  <li><i class="fas fa-location-arrow"></i><span>Florida, USA</span></li>
+                  <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+                </ul>
+              </div>
+              <button class="btn"><a href="./doctor-profile.html">View profile</a></button>
+              <button class="btn"><a style="color: #FFF;" href="./doctor-profile.html">Book Appoitment</a></button>
+            </div>
+             <!-- rebeet item -->
+             <div class="result">
+              <div class="doctor-info">
+                <img src="./images/doctor/doctor-04.jpg" alt="doctor">
+                <span class="doctor-name">Dr. Ruby Perrin</span><br>
+                <span class="doctor-decreption">Periodontology and Oral Implantology, BDS</span><br>
+                <span class="doctor-field">denist</span><br>
+                <div class="p-rating">
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                </div>
+              </div>
+              <div class="doctor-parem">
+                <ul>
+                  <li><i class="fas fa-location-arrow"></i><span>Assuit, Gomhria-street</span></li>
+                  <li><i class="fas fa-comment"></i><span>12</span></li>
+                  <li><i class="fas fa-money-bill"></i><span>200/h</span></li>
+                  <li><i class="fas fa-location-arrow"></i><span>Florida, USA</span></li>
+                  <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+                </ul>
+              </div>
+              <button class="btn"><a href="./doctor-profile.html">View profile</a></button>
+              <button class="btn"><a style="color: #FFF;" href="./doctor-profile.html">Book Appoitment</a></button>
+            </div>
+             <!-- rebeet item -->
+             <div class="result">
+              <div class="doctor-info">
+                <img src="./images/doctor/doctor-05.jpg" alt="doctor">
+                <span class="doctor-name">Dr. Ruby Perrin</span><br>
+                <span class="doctor-decreption">Periodontology and Oral Implantology, BDS</span><br>
+                <span class="doctor-field">denist</span><br>
+                <div class="p-rating">
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                </div>
+              </div>
+              <div class="doctor-parem">
+                <ul>
+                  <li><i class="fas fa-location-arrow"></i><span>Assuit, Gomhria-street</span></li>
+                  <li><i class="fas fa-comment"></i><span>12</span></li>
+                  <li><i class="fas fa-money-bill"></i><span>200/h</span></li>
+                  <li><i class="fas fa-location-arrow"></i><span>Florida, USA</span></li>
+                  <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+                </ul>
+              </div>
+              <button class="btn"><a href="./doctor-profile.html">View profile</a></button>
+              <button class="btn"><a style="color: #FFF;" href="./doctor-profile.html">Book Appoitment</a></button>
+            </div>
+             <!-- rebeet item -->
+             <div class="result">
+              <div class="doctor-info">
+                <img src="./images/doctor/doctor-06.jpg" alt="doctor">
+                <span class="doctor-name">Dr. Ruby Perrin</span><br>
+                <span class="doctor-decreption">Periodontology and Oral Implantology, BDS</span><br>
+                <span class="doctor-field">denist</span><br>
+                <div class="p-rating">
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                  <button class="p-rating-star"><i class="fas fa-star"></i></button>
+                </div>
+              </div>
+              <div class="doctor-parem">
+                <ul>
+                  <li><i class="fas fa-location-arrow"></i><span>Assuit, Gomhria-street</span></li>
+                  <li><i class="fas fa-comment"></i><span>12</span></li>
+                  <li><i class="fas fa-money-bill"></i><span>200/h</span></li>
+                  <li><i class="fas fa-location-arrow"></i><span>Florida, USA</span></li>
+                  <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+                </ul>
+              </div>
+              <button class="btn"><a href="./doctor-profile.html">View profile</a></button>
+              <button class="btn"><a style="color: #FFF;" href="./doctor-profile.html">Book Appoitment</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end search divs -->
+
+  <!-- start footer -->
+  <div class="footer">
+    <div class="row">
+      <div class="col m12 l3">
+        <div class="footer-header"><img src="./images/footer-logo.png" alt=""></div>
+        <div class="footer-descreption">
+          <p class="descre">Lorem ipsum dolor sit amet consectetur , doloribus obcaecati quos pariatur quidem eum rerum vitae iste, ipsa deleniti architecto tempora maxime porro fugiat! Quia.</p>
+          <div class="footer-follow">
+            <ul class="follow-icon">
+              <li><a href="#"><i class=""><i class="fab fa-facebook-f"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-twitter"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-instagram"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-youtube"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-codepen"></i></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="footer-header">
+          Patient&Doctor
+        </div>
+        <ul class="footer-pient-doctor">
+          <li><a href="./search-doctor.html">Search</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./doctor-profile.html">Booking</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="footer-header">
+          For title
+        </div>
+        <ul class="footer-pient-doctor">
+          <li><a href="#">About</a></li>
+          <li><a href="#">faQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col m12 l3">
+        <div class="footer-header">
+          Contact Us
+        </div>
+        <ul class="footer-contact">
+          <li><i class="fas fa-location-arrow"></i><span>Egypt, Assuit (75711), Gomhirai street</span></li>
+          <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+          <li><i class="fas fa-envelope"></i><span>omarasmar9699@gmail.com</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="copy-right">
+          <h6>All copy &copy; right was reseved </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end footer -->
+
+  
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <!-- Datetimepicker JS -->
+  <script src="./js/moment.min.js"></script>
+  <script src="./js/bootstrap-datetimepicker.min.js"></script>
+  <script src="./js/ResizeSensor.js"></script>
+  <script src="./js/theia-sticky-sidebar.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

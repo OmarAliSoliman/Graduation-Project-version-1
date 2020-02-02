@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <!-- google icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- materlized css -->
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <!-- slick css -->
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <!-- foontawesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- picker css -->
+  <link  href="./css/picker.css" rel="stylesheet">
+  <!-- style css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hames</title>
+</head>
+<body class="body-doctor-search">
+
+
+  <!-- start navbar -->
+
+  <!-- dropdow 1 (doctor) -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="./login.html">Login</a></li>
+    <li><a href="#!">Patient</a></li>
+    <li class="divider"></li>
+    <li><a href="./doctor-rigister.html">Rigister</a></li>
+  </ul>
+
+  <!-- dropdow 2 (patient) -->
+  <ul id="dropdown2" class="dropdown-content">
+    <li><a href="./login.html">Login</a></li>
+    <li><a href="./search-doctor.html">Search Doctor</a></li>
+    <li class="divider"></li>
+    <li><a href="./rigister.html">Rigister</a></li>
+  </ul>
+
+  <ul id="dropdown3" class="dropdown-content">
+    <li><a href="./login.html">login</a></li>
+    <li><a href="#!">Patient</a></li>
+    <li><a href="./doctor-rigister.html">rigister</a></li>
+  </ul>
+
+  <ul id="dropdown4" class="dropdown-content">
+    <li><a href="./login.html">login</a></li>
+    <li><a href="./search-doctor.html">Search Docotr</a></li>
+    <li><a href="./doctor-rigister.html">Rigister</a></li>
+  </ul>
+
+  <!-- nav bar -->
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="./index.html" class="brand-logo"><img src="./images/logo.png" alt=""></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Doctor<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Patient<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown3">Doctor<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" href="#" data-target="dropdown4">Patient<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="./faq.html">FAQ</a></li>
+  </ul>
+
+  <!-- end navbar -->
+
+   <!-- start Patient-Bill bar title -->
+
+   <div class="search-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="search-bar-title">
+            <h6>Patient Profile</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- end Patient-Bill bar title -->
+
+
+<!-- start patient profile -->
+
+<div class="patient-profile">
+  <div class="row">
+    <div class="col s12 l3 theiaStickySidebar">
+      <div class="p-profile center">
+        <div class="p-pic">
+          <img src="./images/patients/patient1.jpg" alt=""><br>
+          <h6 class="p-name">omar ali soliman</h6>
+          <span class="p-id">Patient ID: </span><span>PI005</span>
+          <p class="p-place"><i class="fas fa-location-arrow"></i><span>Assuit,Gomhria</span></p>
+        </div>
+        <!-- <form action="" class="left">
+          <input class="log-out left" type="submit" value="Log Out">
+        </form> -->
+      </div>
+      <div class="p-info left">
+        <div class="phone"><i class="fas fa-phone-alt"></i><span>01098586783</span></div>
+        <div class="user-gender"><i class="fas fa-user-check"></i><span>22 years, Male</span></div>
+        <div class="blood">Blood Group : <span>A+</span></div>
+      </div>
+    </div>
+    <!-- End Profile -->
+    <div class="col s12 l9">
+      <div class="add-bill">
+        <div class="bill-labe">
+          <h6>Add Billing</h6>
+        </div>
+        <div class="d-info-bill">
+          <div class="d-info-right">
+              <h6>DR. Dareen Elder</h6>
+              <span>Denicity</span>
+              <p>Assuit</p>
+          </div>
+          <div class="d-info-left">
+            <h6>1 november 2019</h6>
+            <p>#1001</p>
+            <p>#1001</p>
+          </div>
+        </div>
+        <form action="">
+          <div class="add-item">
+            <table class="highlight">
+              <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Ammount</th>
+                    <th class="center">Action</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td><input id="id1" type="text" name="bill-ititle" id=""></td>
+                  <td><input id="id2" type="number" name="bill-amount" id=""></td>
+                  <td class="center">
+                    <label>
+                      <input type="checkbox"  name="record"/>
+                      <span><i class="fas fa-trash"></i></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input id="id3" type="text" name="bill-ititle" id=""></td>
+                  <td><input id="id4" type="number" name="bill-amount" id=""></td>
+                  <td class="center">
+                    <label>
+                      <input type="checkbox"  name="record"/>
+                      <span><i class="fas fa-trash"></i></span>
+                 </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input id="id5" type="text" name="bill-ititle" id=""></td>
+                  <td><input id="id6" type="number" name="bill-amount" id=""></td>
+                  <td class="center">
+                    <label>
+                        <input type="checkbox"  name="record"/>
+                        <span><i class="fas fa-trash"></i></span>
+                   </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="item-btn-add">Add Item</button>
+            <button class="item-btn-delete right">Delete Item</button>
+            <!-- DivTable.com -->
+            <button class="bill-save">Save</button>
+            <button class="bill-save bill-clear">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- end Patient-profile -->
+
+  <!-- start footer -->
+  <div class="footer">
+    <div class="row">
+      <div class="col m12 l3">
+        <div class="footer-header"><img src="./images/footer-logo.png" alt=""></div>
+        <div class="footer-descreption">
+          <p class="descre">Lorem ipsum dolor sit amet consectetur , doloribus obcaecati quos pariatur quidem eum rerum vitae iste, ipsa deleniti architecto tempora maxime porro fugiat! Quia.</p>
+          <div class="footer-follow">
+            <ul class="follow-icon">
+              <li><a href="#"><i class=""><i class="fab fa-facebook-f"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-twitter"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-instagram"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-youtube"></i></i></a></li>
+              <li><a href="#"><i class=""><i class="fab fa-codepen"></i></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="footer-header">
+          Patient&Doctor
+        </div>
+        <ul class="footer-pient-doctor">
+          <li><a href="./search-doctor.html">Search</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./doctor-profile.html">Booking</a></li>
+        </ul>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="footer-header">
+          For title
+        </div>
+        <ul class="footer-pient-doctor">
+          <li><a href="#">About</a></li>
+          <li><a href="#">faQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col m12 l3">
+        <div class="footer-header">
+          Contact Us
+        </div>
+        <ul class="footer-contact">
+          <li><i class="fas fa-location-arrow"></i><span>Egypt, Assuit (75711), Gomhirai street</span></li>
+          <li><i class="fas fa-phone-alt"></i><span>01098586783</span></li>
+          <li><i class="fas fa-envelope"></i><span>omarasmar9699@gmail.com</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <div class="copy-right">
+          <h6>All copy &copy; right was reseved </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end footer -->
+    
+
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/picker.js"></script>
+  <script src="./js/ResizeSensor.js"></script>
+  <script src="./js/theia-sticky-sidebar.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/append-item.js"></script>
+
+</body>
+</html>
